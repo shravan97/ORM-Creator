@@ -28,7 +28,12 @@ python setup.py install
 
 ```  
 ##### Using pip
-Coming up soon !
+
+```sh
+pip install orm-creator
+
+```  
+
 
 ### Usage
 ```sh

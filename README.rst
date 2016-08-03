@@ -48,7 +48,10 @@ Using this repository
 Using pip 
 ''''''''' 
 
-Coming up soon !
+.. code:: sh
+
+  pip install orm-creator
+  
 
 Usage 
 ~~~~~ 
@@ -85,7 +88,6 @@ As a command line app
 
   # The above statement maps `users` and `migrations` tables  
   
-
   
 
 As a module 
