@@ -1,7 +1,6 @@
 from argparse import ArgumentParser as ap
 from ormCreator import OrmCreator
 import sys
-import os
 import getpass
 
 

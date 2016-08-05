@@ -1,6 +1,5 @@
 from sqlalchemy import *
 from sqlalchemy.orm import *
-import sys
 import os
 import re
 
@@ -54,14 +53,7 @@ class OrmCreator(object):
 
         tables = self.fetch_tables()  # Fetch all table info from DB
 
-        # Check if the file exists
-        try:
-            file = open(self.outfile, 'rw+')
-        except:
-            # Open a file in writing mode to create it first
-            file = open(self.outfile, 'w+')
-            file.close()
-            file = open(self.outfile, 'rw+')
+        file = open(self.outfile, 'w+')
 
         file.seek(os.stat(file.name).st_size)  # Seek the end of file
 
@@ -73,10 +65,6 @@ class OrmCreator(object):
         file.write('from sqlalchemy.dialects.mysql import *\n')
         file.write('from sqlalchemy.ext.declarative import declarative_base \n\n')
         file.write('base = declarative_base()\n')
-        # file.close() # File has to be closed frequently for the file size to
-        # get updated
-
-        # file=open(self.outfile , 'rw+')
 
         for table in tables:
             # file.seek(os.stat(file.name).st_size)
