@@ -1,5 +1,7 @@
 # ORM - Creator
 
+[![Build Status](https://travis-ci.org/shravan97/ORM-Creator.svg?branch=master)](https://travis-ci.org/shravan97/ORM-Creator) &nbsp;
+
 ### Description
 Map SQL (MySQl) table(s) and generate ORM classes for them automatically !!  
 This proves to be very useful especially in cases where the number of tables is huge 
