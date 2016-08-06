@@ -36,6 +36,9 @@ pip install orm-creator
 
 ```  
 
+##### From the Zip/tar file
+You can also download the zip/tar files from this [link](https://github.com/shravan97/ORM-Creator/releases)  
+
 
 ### Usage
 ```sh
